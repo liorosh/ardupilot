@@ -94,6 +94,11 @@ qurt: HAL_BOARD = HAL_BOARD_QURT
 qurt: TOOLCHAIN = QURT
 qurt: all
 
+db410c: HAL_BOARD = HAL_BOARD_LINUX
+db410c: TOOLCHAIN = NATIVE
+db410c: BUILDSYS_DEPRECATED  = 1
+db410c: all
+
 # cope with HIL targets
 %-hil: EXTRAFLAGS += "-DHIL_MODE=HIL_MODE_SENSORS "
 %-hilsensors: EXTRAFLAGS += "-DHIL_MODE=HIL_MODE_SENSORS "
@@ -110,7 +115,7 @@ qurt: all
 
 # cope with copter and hil targets
 FRAMES = heli
-BOARDS = apm1 apm2 apm2beta apm1-1280 px4-v1 px4-v2 px4-v3 px4-v4 px4-v4pro sitl flymaple linux erle pxf navio navio2 raspilot bbbmini minlure erlebrain2 bhat qflight pxfmini
+BOARDS = apm1 apm2 apm2beta apm1-1280 px4-v1 px4-v2 px4-v3 px4-v4 px4-v4pro sitl flymaple linux erle pxf navio navio2 raspilot bbbmini minlure erlebrain2 bhat qflight pxfmini db410c
 BOARDS += vrbrain
 BOARDS += vrbrain-v51 vrbrain-v52 vrbrain-v54
 BOARDS += vrcore-v10

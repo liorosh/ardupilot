@@ -37,6 +37,7 @@
 #define HAL_BOARD_SUBTYPE_LINUX_DARK       1016
 #define HAL_BOARD_SUBTYPE_LINUX_URUS       1017
 #define HAL_BOARD_SUBTYPE_LINUX_BLUE       1018
+#define HAL_BOARD_SUBTYPE_LINUX_DB410C     1019
 
 /* HAL PX4 sub-types, starting at 2000 */
 #define HAL_BOARD_SUBTYPE_PX4_V1           2000
@@ -73,7 +74,7 @@
 #define HAL_INS_BBBMINI     17
 #define HAL_INS_AERO        18
 #define HAL_INS_MPU6500     19
-
+#define HAL_INS_LSM6DS3		20
 /* Barometer driver types */
 #define HAL_BARO_BMP085      1
 #define HAL_BARO_MS5611_I2C  2
@@ -87,6 +88,7 @@
 #define HAL_BARO_QURT       10
 #define HAL_BARO_BMP280_I2C 11
 #define HAL_BARO_BMP280_SPI 12
+#define HAL_BARO_LPS25H     13
 
 /* Compass driver types */
 #define HAL_COMPASS_HMC5843             1
@@ -105,7 +107,7 @@
 #define HAL_COMPASS_NAVIO2             14
 #define HAL_COMPASS_NAVIO              15
 #define HAL_COMPASS_AERO               16
-
+#define HAL_COMPASS_LIS3MDL            17
 /* Heat Types */
 #define HAL_LINUX_HEAT_PWM 1
 
