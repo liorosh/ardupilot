@@ -118,4 +118,3 @@ for reviewing patches on their specific area. See [CONTRIBUTING.md](.github/CONT
   - ***Administration***: ArduPilot Technical Community Manager
 - [Jacob Walser](https://github.com/jaxxzer)
   - ***Vehicle***: Sub
-LIOR and MIRI
